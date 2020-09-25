@@ -67,6 +67,10 @@
     border-radius: 50%;
   
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $link-color;
+  }
   }
   
   .follow-link.join {
@@ -74,12 +78,7 @@
     color: $primary-white-color;
   }
   
-  .follow-link:hover,
-  .follow-link:focus {
-    background-color: $link-color;
-  }
-  
-  .follow-item {
+.follow-item {
     margin-right: 10px;
   }
   
