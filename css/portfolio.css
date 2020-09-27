@@ -395,6 +395,11 @@ img {
   color: #2196f3;
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav .link.current {
   position: relative;
   color: #2196f3;
@@ -411,11 +416,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
 }
 
 .auth-nav .link {
@@ -438,6 +438,17 @@ img {
   align-items: center;
   justify-content: center;
   margin-top: 94px;
+}
+
+.filters-list .link.current {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 
 .filters-item {
@@ -464,21 +475,29 @@ img {
   cursor: pointer;
 }
 
-.filters-list .link.current {
-  background-color: #2196f3;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-}
-
 /* примеры работ - ссылки */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.portfolio-list a {
+  text-decoration: none;
+}
+
+.portfolio-list .portfolio-title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list .portfolio-p {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .portfolio-item {
@@ -510,10 +529,6 @@ img {
 .portfolio-item:focus .portfolio-overlay {
   opacity: 1;
   transform: translateY(-100%);
-}
-
-.portfolio-list a {
-  text-decoration: none;
 }
 
 .portfolio-box {
@@ -548,21 +563,6 @@ img {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-}
-
-.portfolio-list .portfolio-title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.portfolio-list .portfolio-p {
-  color: #757575;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
 }
 
 /* Footer */
@@ -639,8 +639,7 @@ footer {
   color: #ffffff;
 }
 
-.follow-link:hover,
-.follow-link:focus {
+.follow-link.join:hover, .follow-link.join:focus {
   background-color: #2196f3;
 }
 

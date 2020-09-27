@@ -10,10 +10,10 @@
     font-family: "Raleway-Bold", sans-serif;
     font-size: 26px;
     text-decoration: none;
-  }
-  
-  .logo .accent {
-    color: $link-color;
+
+    & .accent {
+      color: $link-color;
+    }
   }
   
   .accent.inverse {

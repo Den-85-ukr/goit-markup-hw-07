@@ -2,6 +2,24 @@
 
 .features {
   padding-top: 94px;
+
+  .title {
+    margin: 0 0 10px 0;
+  
+    color: $primary-black-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  
+  .text {
+    margin: 0;
+  
+    color: $primary-gray-color;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .features-iconbox {
@@ -20,37 +38,21 @@
   flex-wrap: wrap;
 }
 
-.features .title {
-  margin: 0 0 10px 0;
-
-  color: $primary-black-color;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.features .text {
-  margin: 0;
-
-  color: $primary-gray-color;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
 .features-item {
   width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
   margin-bottom: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
 }
 
-.features-item:nth-child(4n) {
-  margin-right: 0;
-}
 
-.features-item:nth-last-child(-n + 4) {
-  margin-bottom: 0;
-}
 
 .features-icon {
   width: 70px;

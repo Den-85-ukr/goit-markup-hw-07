@@ -22,10 +22,10 @@
 
 .clients-item {
   margin-right: 30px;
-}
 
-.clients-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .clients-link {
